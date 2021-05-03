@@ -1,0 +1,211 @@
+.navigation {
+    // display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: #000;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    transition: .7s;
+    
+    .nav-logo {
+        width: 195px;
+        height: 70.55px;
+        margin-top: 2.5rem;
+        margin-bottom: 4rem;
+        transition: .9s;
+
+    }
+
+    nav ul li {
+
+        text-align: center;
+        margin-bottom: 3.25rem;
+
+        a {
+
+            color: $primary-color;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: capitalize;
+            transition: .9s;
+            position: relative;
+
+            // // before 
+            // &::before {
+            //     position: absolute;
+            //     bottom: 0;
+            //     left: 0;
+            //     content: "";
+            //     width: 0;
+            //     height: .6rem;
+            //     border-radius: .4rem;
+            //     background: tomato;
+            //     z-index: -1;
+            //     transition: .2s linear;
+            //     -moz-transition: .2s linear;
+            
+            // }
+        }
+
+        &:last-child {
+            margin-bottom: 4rem;
+        }
+
+        // ? Dropdown menu section explore
+        .dropdown {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            
+            a {
+                img {
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+
+            // dropdown content hidden by default
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                min-width: 80%;
+                height: 5rem;
+                z-index: 1;
+                background: rgba(0,0,0,.7);
+
+                a {
+                    display: block;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    padding: .5rem .4rem;
+                    text-decoration: none;
+                
+                }
+            }
+
+            // * hover over dropdown will give display 
+            //*   block to the dropdown content
+            &:hover {
+                .dropdown-content {
+                    display: block;
+                }
+            }
+
+        }
+
+
+    }
+    
+    // link styles 
+    .links {
+        ul {
+            display: flex;
+
+            li {
+                margin-right: .925rem;
+                transition: .9s;
+
+
+                a img {
+                    width: 36px;
+                    height: 29.24px;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+// small and above devices
+@include small-and-above {
+    .navigation {
+        position: static;
+        width: 80%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        // nav logo 
+        .nav-logo {
+            display: none;
+        }
+
+        // navigation links 
+        nav ul li {
+            display: inline-block;
+            margin-right: 0.8rem;
+            margin-bottom: 0;
+    
+            a {
+                font-size: 0.9rem;
+                font-weight: normal;
+                transition: none;
+                position: static;
+
+            }
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+    
+            // ? Dropdown menu section explore
+            .dropdown {
+                
+                a {
+                    img {
+                        height: 15px;
+                        width: 15px;
+                    }
+                }
+    
+                // dropdown content hidden by default
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    top: 3rem;
+                    left: 8rem;
+                    min-width: 30%;
+                    height: auto;
+                    z-index: 1;
+                    background: rgba(0,0,0,1);
+    
+                    a {
+                        display: block;
+                        font-weight: normal;
+                        font-size: 0.9rem;
+                        padding: 1rem 0.7rem;
+                        text-decoration: none;
+                    
+                    }
+                }
+    
+                // * hover over dropdown will give display 
+                //*   block to the dropdown content
+                &:hover {
+                    .dropdown-content {
+                        display: block;
+                    }
+                }
+    
+            }
+    
+    
+        }
+
+        // links 
+        .links {
+            display: none;
+        }
+
+    }
+}

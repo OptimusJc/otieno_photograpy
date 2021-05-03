@@ -1,0 +1,4 @@
+@mixin pad_top_and_bottom($value) {
+    padding-top: $value;
+    padding-bottom: $value;
+}

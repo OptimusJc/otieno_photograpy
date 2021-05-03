@@ -1,0 +1,13 @@
+footer {
+    text-align: center;
+    margin-top: 0.625rem;
+    font-size: .938rem;
+    @include pad_top_and_bottom(1.5rem);
+    
+    img {
+        width: 25.78px;
+        height: 20.5px;
+    }
+
+}
+

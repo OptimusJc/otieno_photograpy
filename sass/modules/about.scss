@@ -1,0 +1,112 @@
+
+.about {
+
+    .about-me {
+        margin-top: 0.625rem;
+        width: 100%;
+        height: 208px;
+        margin-right:  auto;
+        margin-left: 0;
+
+    
+        p {
+            font-size: 1rem;
+            line-height: 1.1rem;
+            letter-spacing: 0.32px;
+            text-align: center;
+        }
+    }
+
+    // profile pic section 
+    .profile-pic {
+        width: 266px;
+        height: 304px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2.5rem;
+        border-radius: 10px;
+        overflow: hidden;
+
+
+        img {
+            width: 100%;    
+            height: auto;
+            object-fit: contain;
+            object-position: center;
+        }
+
+    }
+
+    .links ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+        
+        li {
+
+            margin-left: 20px;
+
+            a img {
+                width: 25.78px;
+                height: 20.5px;
+            }
+        }
+
+    }
+
+}
+
+@include small-and-above {
+
+    .about {
+
+        .about-me {
+            margin-top: 2.5rem;
+            width: 611px;
+            height: auto;
+            margin-right: auto;
+            margin-left: auto;
+            
+            p {
+                font-size: 1.125rem;
+                line-height: 1.375rem;
+                letter-spacing: 1.25px;
+            }
+        }
+
+
+        // profile pic section 
+        .profile-pic {
+            width: 433px;
+            height: 496px;
+            margin-top: 3.875rem;
+        }
+
+        .links ul {
+            margin-top: 6.125rem;
+            
+            li {
+
+                margin-left: 20px;
+
+                a img {
+                    width: 30px;
+                    height: 24px;
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

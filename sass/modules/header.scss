@@ -1,0 +1,48 @@
+// header styles
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4.375rem;
+    
+
+    .menu-logo {
+        width: 116px;
+        height: 42.55px;
+    }
+
+
+    // toggle navigation 
+    .nav-toggle:checked ~.navigation {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    // hide the checkbox toggle 
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-toggle-label img {
+        width: 30px;
+        height: 30px;
+        margin-right: 1.25rem;
+    }
+
+}
+
+
+@include small-and-above {
+    .header {
+
+        // hambuger icon 
+        .nav-toggle-label {
+            display: none;
+        }
+    }
+}
+
+
+
