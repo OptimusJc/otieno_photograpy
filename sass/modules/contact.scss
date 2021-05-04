@@ -98,9 +98,18 @@
         margin-top: 1.5rem;
     }
 
-    footer {
-        margin-top: 1.25rem;
-    }
+    // footer {
+    //     margin-top: 1.25rem;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+
+    //     img {
+    //         width: 15px;
+    //         height: 15px;
+    //     }
+
+    // }
 
 }
 
@@ -124,15 +133,16 @@
             }
         }
 
-
         form {
             margin-top: 1.25rem;
+
+            textarea {
+                height: 180px;
+            }
         }
 
         .links ul {
             margin-top: 3.12rem;
-            border: 2px solid cyan;
-            width: 50%;
 
             li {
                 margin-left: 20px;
@@ -140,7 +150,7 @@
     
                 a {
                     p {
-                        margin-left: 1rem;
+                        margin-left: 0.9rem;
                         color: $primary-color;
                     }
                 }
@@ -148,11 +158,23 @@
         }
 
      // maps 
-    #maps {
-        width: 50%;
-        float: right;
-        border: 2px solid greenyellow;
-    }
+        #maps {
+            width: 100%;
+            left: -0.9rem;
+        }
+
+        // footer {
+        //     // margin-top: 1.25rem;
+        //     // display: flex;
+        //     // align-items: center;
+        //     // justify-content: center;
+    
+        //     img {
+        //         width: 15px;
+        //         height: 15px;
+        //     }
+    
+        // }
 
 
     }

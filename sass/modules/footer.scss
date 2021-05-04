@@ -1,13 +1,13 @@
 footer {
-    text-align: center;
-    margin-top: 0.625rem;
-    font-size: .938rem;
-    @include pad_top_and_bottom(1.5rem);
-    
+    margin-top: 1.65rem; //random number that worked(come back and revise)
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+
     img {
-        width: 25.78px;
-        height: 20.5px;
+        width: 15px;
+        height: 15px;
     }
 
 }
-
