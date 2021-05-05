@@ -2,3 +2,18 @@
     width: 228px;
     height: 83px;
 }
+
+@include small-and-above {
+    .menu-logo {
+        width: 116px;
+        height: 42.55px;
+    }
+}
+
+@include medium-and-above {
+    .menu-logo {
+        width: 182px;
+        height: 66px;
+        margin-left: 7.625rem;
+    }
+}

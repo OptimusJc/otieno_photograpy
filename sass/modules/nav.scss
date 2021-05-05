@@ -8,46 +8,28 @@
     height: 100vh;
     display: grid;
     justify-items: center;
-    transition: .7s;
-    
+    transition: 0.7s;
+    z-index: 2;
+
     .nav-logo {
         width: 195px;
         height: 70.55px;
         margin-top: 2.5rem;
         margin-bottom: 4rem;
-        transition: .9s;
-
+        transition: 0.9s;
     }
 
     nav ul li {
-
         text-align: center;
         margin-bottom: 3.25rem;
 
         a {
-
             color: $primary-color;
             font-size: 1.5rem;
             font-weight: 700;
             text-transform: capitalize;
-            transition: .9s;
+            transition: 0.5s;
             position: relative;
-
-            // // before 
-            // &::before {
-            //     position: absolute;
-            //     bottom: 0;
-            //     left: 0;
-            //     content: "";
-            //     width: 0;
-            //     height: .6rem;
-            //     border-radius: .4rem;
-            //     background: tomato;
-            //     z-index: -1;
-            //     transition: .2s linear;
-            //     -moz-transition: .2s linear;
-            
-            // }
         }
 
         &:last-child {
@@ -56,10 +38,11 @@
 
         // ? Dropdown menu section explore
         .dropdown {
-            overflow: hidden;
             display: flex;
             align-items: center;
-            
+            justify-content: center;
+            position: relative;
+
             a {
                 img {
                     height: 25px;
@@ -71,43 +54,45 @@
             .dropdown-content {
                 display: none;
                 position: absolute;
-                min-width: 80%;
+                top: 2rem;
+                min-width: 300px;
                 height: 5rem;
                 z-index: 1;
-                background: rgba(0,0,0,.7);
+                background: rgba(0, 0, 0, 0.8);
 
                 a {
                     display: block;
                     font-weight: 700;
-                    font-size: 1.2rem;
-                    padding: .5rem .4rem;
+                    font-size: 1rem;
+                    padding: 0.5rem 0.4rem;
                     text-decoration: none;
-                
                 }
             }
 
-            // * hover over dropdown will give display 
+            // * hover over dropdown will give display
             //*   block to the dropdown content
             &:hover {
                 .dropdown-content {
                     display: block;
+
+                    a {
+                        &:hover {
+                            background: rgba(102, 97, 37, 0.5);
+                        }
+                    }
                 }
             }
-
         }
-
-
     }
-    
-    // link styles 
+
+    // link styles
     .links {
         ul {
             display: flex;
 
             li {
-                margin-right: .925rem;
-                transition: .9s;
-
+                margin-right: 0.925rem;
+                transition: 0.9s;
 
                 a img {
                     width: 36px;
@@ -118,94 +103,134 @@
                     margin: 0;
                 }
             }
-
         }
-
     }
-
 }
 
 // small and above devices
 @include small-and-above {
     .navigation {
         position: static;
-        width: 80%;
-        height: 4rem;
+        height: inherit;
         display: flex;
         align-items: center;
         justify-content: flex-end;
 
-        // nav logo 
+        // nav logo
         .nav-logo {
             display: none;
         }
 
-        // navigation links 
+        // navigation links
         nav ul li {
             display: inline-block;
-            margin-right: 0.8rem;
             margin-bottom: 0;
-    
-            a {
-                font-size: 0.9rem;
-                font-weight: normal;
-                transition: none;
-                position: static;
+            text-align: left;
+            padding: 20px 7px;
 
+            a {
+                font-size: 0.8rem;
+                font-weight: 500;
+                transition: none;
             }
-    
+
             &:last-child {
                 margin-bottom: 0;
             }
-    
+
             // ? Dropdown menu section explore
             .dropdown {
-                
                 a {
                     img {
                         height: 15px;
                         width: 15px;
                     }
                 }
-    
+
                 // dropdown content hidden by default
                 .dropdown-content {
                     display: none;
                     position: absolute;
-                    top: 3rem;
-                    left: 8rem;
-                    min-width: 30%;
+                    top: 1.2rem;
+                    left: 0.1rem;
+                    min-width: 200px;
                     height: auto;
                     z-index: 1;
-                    background: rgba(0,0,0,1);
-    
+                    background: rgba(0, 0, 0, 0.9);
+
                     a {
                         display: block;
-                        font-weight: normal;
-                        font-size: 0.9rem;
+                        font-weight: 500;
+                        font-size: 0.8rem;
                         padding: 1rem 0.7rem;
                         text-decoration: none;
-                    
                     }
                 }
-    
-                // * hover over dropdown will give display 
+
+                // * hover over dropdown will give display
                 //*   block to the dropdown content
                 &:hover {
                     .dropdown-content {
                         display: block;
+
+                        a {
+                            &:hover {
+                                background: rgba(102, 97, 37, 0.5);
+                            }
+                        }
+                    }
+
+                    &:not(:first-child) {
+                        border: 1px solid #dacf3c;
                     }
                 }
-    
             }
-    
-    
         }
 
-        // links 
+        // links
         .links {
             display: none;
         }
+    }
+}
 
+@include medium-and-above {
+    .navigation {
+        margin-right: 7.8125rem;
+
+        nav ul li {
+            a {
+                font-size: 1rem;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                top: 4rem;
+                left: 0.1rem;
+                min-width: 200px;
+                height: auto;
+                z-index: 1;
+                background: rgba(0, 0, 0, 0.9);
+
+                a {
+                    display: block;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    padding: 1rem 0.7rem;
+                    text-decoration: none;
+                }
+            }
+
+            &:hover .dropdown-content {
+                display: block;
+
+                a {
+                    &:hover {
+                        background: rgba(102, 97, 37, 0.5);
+                    }
+                }
+            }
+        }
     }
 }
