@@ -8,6 +8,11 @@
         width: 116px;
         height: 42.55px;
     }
+
+    .logo {
+        width: 228px;
+        height: 83px;
+    }
 }
 
 @include medium-and-above {
@@ -15,5 +20,10 @@
         width: 182px;
         height: 66px;
         margin-left: 7.625rem;
+    }
+
+    .logo {
+        width: 514px;
+        height: 186px;
     }
 }

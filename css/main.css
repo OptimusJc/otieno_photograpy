@@ -102,13 +102,19 @@ ul {
 @media only screen and (min-width: 48em) {
   .menu-logo {
     width: 116px;
-    height: 42.55px; } }
+    height: 42.55px; }
+  .logo {
+    width: 228px;
+    height: 83px; } }
 
 @media only screen and (min-width: 62em) {
   .menu-logo {
     width: 182px;
     height: 66px;
-    margin-left: 7.625rem; } }
+    margin-left: 7.625rem; }
+  .logo {
+    width: 514px;
+    height: 186px; } }
 
 .landing {
   position: relative; }
@@ -132,6 +138,15 @@ ul {
   .landing a {
     top: 542px;
     left: 344px; } }
+
+@media only screen and (min-width: 62em) {
+  .landing img {
+    top: 447px;
+    left: 703px; }
+  .landing a {
+    top: 671px;
+    left: 892px;
+    font-size: 3.75rem; } }
 
 .header {
   display: flex;

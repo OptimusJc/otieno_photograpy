@@ -1,6 +1,6 @@
 .landing {
     position: relative;
-    
+
     img {
         position: absolute;
         top: 285px;
@@ -16,12 +16,10 @@
         top: 398px;
         left: 167px;
     }
-
 }
 
 @include small-and-above {
     .landing {
-
         img {
             top: 429px;
             left: 270px;
@@ -31,6 +29,20 @@
             top: 542px;
             left: 344px;
         }
+    }
+}
 
+@include medium-and-above {
+    .landing {
+        img {
+            top: 447px;
+            left: 703px;
+        }
+
+        a {
+            top: 671px;
+            left: 892px;
+            font-size: 3.75rem;
+        }
     }
 }
