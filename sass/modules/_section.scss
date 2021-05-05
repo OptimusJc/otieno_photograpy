@@ -2,24 +2,20 @@
     margin-top: 1.875rem;
 
     h1 {
-        font-size:1.25rem;
+        font-size: 1.25rem;
         color: $primary-color;
         line-height: 1.3rem;
         text-align: center;
         text-transform: capitalize;
-        
     }
-} 
+}
 
 @include small-and-above {
     .heading {
         margin-top: 2.5rem;
 
         h1 {
-            font-size:1.625rem;
-            
+            font-size: 1.625rem;
         }
-    } 
+    }
 }
-
-
