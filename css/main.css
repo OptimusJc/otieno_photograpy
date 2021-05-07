@@ -29,7 +29,7 @@ ul {
   float: right; }
 
 .no-display {
-  border: 1px solid red; }
+  display: none; }
 
 .container {
   width: 100%; }
@@ -48,7 +48,7 @@ ul {
   content: "";
   clear: both; }
 
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 47.375em) {
   [class*="col-"] {
     width: 100%; } }
 
@@ -255,7 +255,9 @@ ul {
     height: inherit;
     display: flex;
     align-items: center;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    width: 80%;
+    margin-right: 1rem; }
     .navigation .nav-logo {
       display: none; }
     .navigation nav ul li {
@@ -264,8 +266,8 @@ ul {
       text-align: left;
       padding: 20px 7px; }
       .navigation nav ul li a {
-        font-size: 0.8rem;
-        font-weight: 500;
+        font-size: 0.7rem;
+        font-weight: 600;
         transition: none; }
       .navigation nav ul li:last-child {
         margin-bottom: 0; }
@@ -284,7 +286,7 @@ ul {
         .navigation nav ul li .dropdown .dropdown-content a {
           display: block;
           font-weight: 500;
-          font-size: 0.8rem;
+          font-size: 0.7rem;
           padding: 1rem 0.7rem;
           text-decoration: none; }
       .navigation nav ul li .dropdown:hover .dropdown-content {
@@ -298,9 +300,10 @@ ul {
 
 @media only screen and (min-width: 62em) {
   .navigation {
-    margin-right: 7.8125rem; }
+    margin-right: 7.8125rem;
+    width: 40%; }
     .navigation nav ul li a {
-      font-size: 1rem; }
+      font-size: 0.8rem; }
     .navigation nav ul li .dropdown-content {
       display: none;
       position: absolute;
@@ -328,10 +331,12 @@ ul {
   grid-auto-flow: row;
   grid-gap: 0.4rem;
   overflow-x: scroll;
-  margin-top: 1.69rem;
-  margin-bottom: 2.44rem;
+  margin-top: 2rem;
+  margin-bottom: 1.44rem;
   margin-right: auto;
   margin-left: auto; }
+  .wrapper::-webkit-scrollbar {
+    display: none; }
   .wrapper .media-item {
     width: 568px;
     height: 502px; }
@@ -351,9 +356,10 @@ ul {
 
 @media only screen and (min-width: 48em) {
   .wrapper {
-    width: 699px;
+    width: 705px;
     height: 650px;
-    margin-top: 4.125rem; }
+    margin-top: 4.125rem;
+    margin-bottom: 1rem; }
     .wrapper .media-item,
     .wrapper .media-item-food {
       width: 695px;
@@ -372,7 +378,7 @@ ul {
   width: 100%;
   height: auto;
   margin: auto;
-  margin-top: 1.25rem; }
+  margin-top: 1.5625rem; }
   .boxes .box1,
   .boxes .box2,
   .boxes .box3 {
@@ -393,9 +399,9 @@ ul {
 
 @media only screen and (min-width: 48em) {
   .boxes {
-    margin-top: 4.375rem;
+    margin-top: 3.375rem;
     display: flex;
-    width: 699px;
+    width: 705px;
     overflow: hidden; }
     .boxes .box1,
     .boxes .box2,
@@ -461,7 +467,7 @@ ul {
   margin-left: 0; }
   .about .about-me p {
     font-size: 0.9rem;
-    line-height: 1.1rem;
+    line-height: 1.2rem;
     letter-spacing: 0.32px;
     text-align: center; }
   .about .about-me .inline-links {
@@ -499,7 +505,7 @@ ul {
     margin-right: auto;
     margin-left: auto; }
     .about .about-me p {
-      font-size: 1rem;
+      font-size: 0.9rem;
       line-height: 1.375rem;
       letter-spacing: 1.25px; }
     .about .about-me .inline-links {
@@ -551,7 +557,7 @@ ul {
     margin-left: 21px;
     margin-right: 21px; }
     .contact .about-me p {
-      font-size: 1rem;
+      font-size: 0.9rem;
       line-height: 1.1rem;
       text-transform: capitalize; }
   .contact form {
@@ -575,7 +581,7 @@ ul {
       height: 110px;
       resize: vertical; }
     .contact form label {
-      font-size: 1rem;
+      font-size: 0.9rem;
       padding: 18px auto 5px 21px; }
     .contact form .form-div {
       margin-bottom: 18px; }
@@ -615,7 +621,7 @@ ul {
       width: auto;
       height: auto; }
       .contact .about-me p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         line-height: 1.1rem;
         text-transform: capitalize; }
         .contact .about-me p:nth-child(even) {
@@ -631,7 +637,8 @@ ul {
         margin-bottom: 1.25rem; }
         .contact .links ul li a p {
           margin-left: 0.9rem;
-          color: #fff348; }
+          color: #fff348;
+          font-size: 0.8rem; }
     .contact #maps {
       width: 100%;
       left: -0.9rem;

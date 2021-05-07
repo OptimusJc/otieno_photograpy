@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
     margin: auto;
-    margin-top: 1.25rem;
+    margin-top: 1.5625rem;
 
     .box1,
     .box2,
@@ -28,11 +28,47 @@
     }
 }
 
+// @include extra-small-devices {
+//     .boxes {
+//         margin-top: 4.375rem;
+//         display: flex;
+//         width: 699px;
+//         overflow: hidden;
+
+//         .box1,
+//         .box2,
+//         .box3 {
+//             grid-template-columns: repeat(10, 1.438rem);
+//             grid-template-rows: minmax(0.688rem, auto);
+//             gap: 1.065rem; //custom value that balanced these boxes
+//             // separator margin
+//             margin-right: 1rem;
+//         }
+
+//         .box1 div,
+//         .box2 div,
+//         .box3 div {
+//             width: 1.438rem;
+//             height: 0.688rem;
+//             background: #fff;
+//         }
+
+//         .box1 div {
+//             display: grid;
+//         }
+
+//         .box2 div,
+//         .box3 div {
+//             display: none;
+//         }
+//     }
+// }
+
 @include small-and-above {
     .boxes {
-        margin-top: 4.375rem;
+        margin-top: 3.375rem; //original 4.375rem
         display: flex;
-        width: 699px;
+        width: 705px;
         overflow: hidden;
 
         .box1,

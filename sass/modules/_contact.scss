@@ -8,7 +8,7 @@
         margin-right: 21px;
 
         p {
-            font-size: 1rem;
+            font-size: 0.9rem;
             line-height: 1.1rem;
             text-transform: capitalize;
         }
@@ -41,7 +41,7 @@
         }
 
         label {
-            font-size: 1rem;
+            font-size: 0.9rem;
             padding: 18px auto 5px 21px;
         }
 
@@ -105,7 +105,7 @@
             height: auto;
 
             p {
-                font-size: 1rem;
+                font-size: 0.9rem;
                 line-height: 1.1rem;
                 text-transform: capitalize;
 
@@ -134,6 +134,7 @@
                     p {
                         margin-left: 0.9rem;
                         color: $primary-color;
+                        font-size: 0.8rem;
                     }
                 }
             }
