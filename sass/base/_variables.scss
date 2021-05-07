@@ -5,7 +5,8 @@
     font-family: "Century Gothic Regular";
     font-style: normal;
     font-weight: normal;
-    src: local("Century Gothic Regular"), url("GOTHIC.woff") format("woff");
+    src: local("Century Gothic Regular"),
+        url("../../images/font/GOTHIC.TTF") format("ttf");
 }
 
 $primary-color: #fff348;
