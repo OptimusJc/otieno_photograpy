@@ -11,7 +11,7 @@
         grid-template-columns: repeat(10, 1.25rem);
         grid-template-rows: minmax(0.625rem, auto);
         grid-auto-flow: row;
-        gap: 1.375rem;
+        gap: 0.9rem; //original 1.375rem
     }
 
     .box1 div,
