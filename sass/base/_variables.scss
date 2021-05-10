@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
-@import url("http://fonts.cdnfonts.com/css/century-gothic");
-
-// @font-face {
-//     font-family: "Century Gothic Regular";
-//     font-style: normal;
-//     font-weight: normal;
-//     src: url("/images/font/GOTHIC.woff") format("woff");
-// }
+@font-face {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/images/font/GOTHIC.woff") format("woff");
+}
 
 $primary-color: #fff348;
 $secondary-color: #000000;

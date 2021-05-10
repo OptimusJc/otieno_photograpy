@@ -9,3 +9,20 @@
 .no-display {
     display: none;
 }
+
+.spacer {
+    margin-top: 12rem;
+}
+
+@include small-and-above {
+    .spacer {
+        margin-top: 0;
+    }
+}
+
+@include medium-and-above {
+    .spacer {
+        margin-top: 0;
+        border: 1px solid cyan;
+    }
+}
