@@ -7,7 +7,7 @@
     transform: rotate(-90deg) translateX(-502px);
     transform-origin: top left;
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
 
@@ -68,6 +68,10 @@
         margin-left: 1.4rem; //margin-left that just worked. come back to this
         transform: rotate(-90deg) translateX(-603px);
         transform-origin: top left;
+        overflow-y: scroll;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
 
         .wrapper {
             width: 705px;
@@ -92,6 +96,10 @@
         transform: rotate(-90deg) translateX(-650px);
         transform-origin: top left;
         position: absolute;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
 
         .wrapper {
             width: 1330px;

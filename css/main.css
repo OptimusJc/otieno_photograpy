@@ -345,7 +345,7 @@ ul {
   transform: rotate(-90deg) translateX(-502px);
   transform-origin: top left;
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none; }
   .outer-wrapper .wrapper {
@@ -385,7 +385,11 @@ ul {
     margin-top: 6.125rem;
     margin-left: 1.4rem;
     transform: rotate(-90deg) translateX(-603px);
-    transform-origin: top left; }
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none; }
     .outer-wrapper .wrapper {
       width: 705px;
       height: 650px;
@@ -403,7 +407,11 @@ ul {
     margin-left: 16rem;
     transform: rotate(-90deg) translateX(-650px);
     transform-origin: top left;
-    position: absolute; }
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none; }
     .outer-wrapper .wrapper {
       width: 1330px;
       height: 650px;
