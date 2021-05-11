@@ -199,8 +199,9 @@
 
 @include medium-and-above {
     .navigation {
-        margin-right: 7.8125rem;
-        width: 40%;
+        background: none;
+        margin-right: 3.75rem;
+        width: 60%;
 
         nav ul li {
             a {
@@ -211,7 +212,7 @@
                 display: none;
                 position: absolute;
                 top: 4rem;
-                left: 0.1rem;
+                // left: 0.1rem;
                 min-width: 200px;
                 height: auto;
                 z-index: 1;
@@ -238,3 +239,4 @@
         }
     }
 }
+

@@ -154,7 +154,8 @@
     .contact {
         .about-me,
         form {
-            margin-left: 250px;
+            margin-left: 3.75rem;
+            margin-top: 2.0625rem;
         }
 
         .about-me {
@@ -183,14 +184,14 @@
             display: block;
             // float: right;
             // margin-right: 600px;
-            margin-left: 250px;
+            margin-left: 3.125rem;
             margin-top: 5.375rem;
         }
 
         #maps {
             width: 100%;
             height: 450px;
-            margin-top: 2rem; //random number that worked
+            margin-top: 2.375rem;
         }
     }
 }

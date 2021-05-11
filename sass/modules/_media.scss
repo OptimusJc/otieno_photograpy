@@ -64,7 +64,7 @@
     .outer-wrapper {
         width: 603px;
         height: 695px;
-        margin-top: 6.125rem;
+        margin-top: 5.125rem;
         margin-left: 1.4rem; //margin-left that just worked. come back to this
         transform: rotate(-90deg) translateX(-603px);
         transform-origin: top left;
@@ -90,10 +90,10 @@
 
 @include medium-and-above {
     .outer-wrapper {
-        width: 650px;
-        height: 1330px;
-        margin-left: 16rem;
-        transform: rotate(-90deg) translateX(-650px);
+        width: 540px;
+        height: 1187px;
+        margin-left: 5.625rem;
+        transform: rotate(-90deg) translateX(-540px);
         transform-origin: top left;
         position: absolute;
         overflow-y: scroll;
@@ -102,16 +102,18 @@
         -ms-overflow-style: none;
 
         .wrapper {
-            width: 1330px;
-            height: 650px;
-            transform: rotate(90deg) translateY(-650px);
+            width: 1187px;
+            height: 506px;
+            transform: rotate(90deg) translateY(-540px);
             transform-origin: top left;
 
             .media-item,
             .media-item-food {
-                width: 750px; //original 855px
-                height: 650px;
+                width: 639px; //original 855px
+                // height: 506px;
+                height: 540px;
             }
         }
     }
 }
+

@@ -101,8 +101,9 @@
 @include medium-and-above {
     .about {
         .about-me {
-            margin-top: 20.625rem;
-            margin-left: 18.125rem;
+            margin-top: 10rem;
+            margin-left: 12.5rem;
+            width: 486px;
 
             p {
                 text-align: left;
@@ -128,11 +129,11 @@
         }
 
         .profile-pic {
-            width: 497px;
-            height: 669px;
-            margin-top: 6.25rem;
-            margin-bottom: 1rem;
-            margin-right: 25.875rem;
+            width: 350px;
+            height: 471px;
+            margin-top: 3rem;
+            margin-bottom: 6rem;
+            margin-right: 12.5rem;
         }
     }
 

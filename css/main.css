@@ -40,7 +40,7 @@ ul {
 
 @media only screen and (min-width: 62em) {
   .spacer {
-    margin-top: 55rem;
+    margin-top: 45rem;
     position: relative; } }
 
 .container {
@@ -60,7 +60,7 @@ ul {
   content: "";
   clear: both; }
 
-@media only screen and (max-width: 47.375em) {
+@media only screen and (max-width: 47.9375em) {
   [class*="col-"] {
     width: 100%; } }
 
@@ -134,8 +134,8 @@ ul {
     height: 66px;
     margin-left: 7.625rem; }
   .logo {
-    width: 514px;
-    height: 186px; } }
+    width: 404px;
+    height: 147px; } }
 
 .landing {
   position: relative; }
@@ -162,12 +162,13 @@ ul {
 
 @media only screen and (min-width: 62em) {
   .landing img {
-    top: 447px;
-    left: 703px; }
+    top: 237px;
+    left: 481px; }
   .landing a {
-    top: 671px;
-    left: 892px;
-    font-size: 3.75rem; } }
+    top: 414px;
+    left: 622px;
+    font-size: 2.75rem;
+    margin-top: 0.9rem; } }
 
 .header {
   display: flex;
@@ -312,15 +313,15 @@ ul {
 
 @media only screen and (min-width: 62em) {
   .navigation {
-    margin-right: 7.8125rem;
-    width: 40%; }
+    background: none;
+    margin-right: 3.75rem;
+    width: 60%; }
     .navigation nav ul li a {
       font-size: 0.8rem; }
     .navigation nav ul li .dropdown-content {
       display: none;
       position: absolute;
       top: 4rem;
-      left: 0.1rem;
       min-width: 200px;
       height: auto;
       z-index: 1;
@@ -382,7 +383,7 @@ ul {
   .outer-wrapper {
     width: 603px;
     height: 695px;
-    margin-top: 6.125rem;
+    margin-top: 5.125rem;
     margin-left: 1.4rem;
     transform: rotate(-90deg) translateX(-603px);
     transform-origin: top left;
@@ -402,10 +403,10 @@ ul {
 
 @media only screen and (min-width: 62em) {
   .outer-wrapper {
-    width: 650px;
-    height: 1330px;
-    margin-left: 16rem;
-    transform: rotate(-90deg) translateX(-650px);
+    width: 540px;
+    height: 1187px;
+    margin-left: 5.625rem;
+    transform: rotate(-90deg) translateX(-540px);
     transform-origin: top left;
     position: absolute;
     overflow-y: scroll;
@@ -413,14 +414,14 @@ ul {
     scrollbar-width: none;
     -ms-overflow-style: none; }
     .outer-wrapper .wrapper {
-      width: 1330px;
-      height: 650px;
-      transform: rotate(90deg) translateY(-650px);
+      width: 1187px;
+      height: 506px;
+      transform: rotate(90deg) translateY(-540px);
       transform-origin: top left; }
       .outer-wrapper .wrapper .media-item,
       .outer-wrapper .wrapper .media-item-food {
-        width: 750px;
-        height: 650px; } }
+        width: 639px;
+        height: 540px; } }
 
 .boxes {
   width: 100%;
@@ -473,8 +474,9 @@ ul {
 @media only screen and (min-width: 62em) {
   .boxes {
     display: flex;
-    width: 1330px;
+    width: 1187px;
     margin-top: 4rem;
+    margin-left: 5.625rem;
     overflow: hidden; }
     .boxes .box1,
     .boxes .box2,
@@ -482,7 +484,7 @@ ul {
       grid-template-columns: repeat(10, 1.563rem);
       grid-template-rows: minmax(0.75rem, auto);
       gap: 1.25rem;
-      margin-right: 1.25rem; }
+      margin-right: 0.9375rem; }
     .boxes .box1 div,
     .boxes .box2 div,
     .boxes .box3 div {
@@ -576,8 +578,9 @@ ul {
 
 @media only screen and (min-width: 62em) {
   .about .about-me {
-    margin-top: 20.625rem;
-    margin-left: 18.125rem; }
+    margin-top: 10rem;
+    margin-left: 12.5rem;
+    width: 486px; }
     .about .about-me p {
       text-align: left; }
     .about .about-me .inline-links {
@@ -591,11 +594,11 @@ ul {
             width: 30px;
             height: 24px; }
   .about .profile-pic {
-    width: 497px;
-    height: 669px;
-    margin-top: 6.25rem;
-    margin-bottom: 1rem;
-    margin-right: 25.875rem; }
+    width: 350px;
+    height: 471px;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    margin-right: 12.5rem; }
   .links {
     display: none; } }
 
@@ -698,7 +701,8 @@ ul {
 @media only screen and (min-width: 62em) {
   .contact .about-me,
   .contact form {
-    margin-left: 250px; }
+    margin-left: 3.75rem;
+    margin-top: 2.0625rem; }
   .contact .about-me p {
     font-size: 0.9rem;
     padding-left: 0.9rem; }
@@ -714,12 +718,12 @@ ul {
       font-size: 0.9rem; }
   .contact .links {
     display: block;
-    margin-left: 250px;
+    margin-left: 3.125rem;
     margin-top: 5.375rem; }
   .contact #maps {
     width: 100%;
     height: 450px;
-    margin-top: 2rem; } }
+    margin-top: 2.375rem; } }
 
 footer {
   margin-top: 1.65rem;
