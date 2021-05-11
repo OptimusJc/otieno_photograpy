@@ -1,15 +1,15 @@
 .outer-wrapper {
     width: 502px;
     height: 330px; //just worked come back to this
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1.69rem;
     transform: rotate(-90deg) translateX(-502px);
     transform-origin: top left;
     overflow-y: scroll;
     overflow-x: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 1.69rem;
 
     // potraits wrapper
     .wrapper {
@@ -64,9 +64,10 @@
     .outer-wrapper {
         width: 603px;
         height: 695px;
+        margin-top: 6.125rem;
+        margin-left: 1.4rem; //margin-left that just worked. come back to this
         transform: rotate(-90deg) translateX(-603px);
-        margin-top: 5.125rem;
-        margin-left: 1.4rem; //marginleft that just worked. come back to this
+        transform-origin: top left;
 
         .wrapper {
             width: 705px;
@@ -87,18 +88,20 @@
     .outer-wrapper {
         width: 650px;
         height: 1330px;
-        transform: rotate(-90deg) translateX(-650px);
         margin-left: 16rem;
-        border: 2px solid red;
+        transform: rotate(-90deg) translateX(-650px);
+        transform-origin: top left;
+        position: absolute;
 
         .wrapper {
             width: 1330px;
             height: 650px;
             transform: rotate(90deg) translateY(-650px);
+            transform-origin: top left;
 
             .media-item,
             .media-item-food {
-                width: 750px;
+                width: 750px; //original 855px
                 height: 650px;
             }
         }

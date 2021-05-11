@@ -40,8 +40,8 @@ ul {
 
 @media only screen and (min-width: 62em) {
   .spacer {
-    margin-top: 0;
-    border: 1px solid cyan; } }
+    margin-top: 55rem;
+    position: relative; } }
 
 .container {
   width: 100%; }
@@ -339,15 +339,15 @@ ul {
 .outer-wrapper {
   width: 502px;
   height: 330px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1.69rem;
   transform: rotate(-90deg) translateX(-502px);
   transform-origin: top left;
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: none;
-  -ms-overflow-style: none;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 1.69rem; }
+  -ms-overflow-style: none; }
   .outer-wrapper .wrapper {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -382,9 +382,10 @@ ul {
   .outer-wrapper {
     width: 603px;
     height: 695px;
+    margin-top: 6.125rem;
+    margin-left: 1.4rem;
     transform: rotate(-90deg) translateX(-603px);
-    margin-top: 5.125rem;
-    margin-left: 1.4rem; }
+    transform-origin: top left; }
     .outer-wrapper .wrapper {
       width: 705px;
       height: 650px;
@@ -399,13 +400,15 @@ ul {
   .outer-wrapper {
     width: 650px;
     height: 1330px;
-    transform: rotate(-90deg) translateX(-650px);
     margin-left: 16rem;
-    border: 2px solid red; }
+    transform: rotate(-90deg) translateX(-650px);
+    transform-origin: top left;
+    position: absolute; }
     .outer-wrapper .wrapper {
       width: 1330px;
       height: 650px;
-      transform: rotate(90deg) translateY(-650px); }
+      transform: rotate(90deg) translateY(-650px);
+      transform-origin: top left; }
       .outer-wrapper .wrapper .media-item,
       .outer-wrapper .wrapper .media-item-food {
         width: 750px;
@@ -436,7 +439,7 @@ ul {
 
 @media only screen and (min-width: 48em) {
   .boxes {
-    margin-top: 3.375rem;
+    margin-top: 4.375rem;
     display: flex;
     width: 705px;
     overflow: hidden; }
@@ -463,6 +466,7 @@ ul {
   .boxes {
     display: flex;
     width: 1330px;
+    margin-top: 4rem;
     overflow: hidden; }
     .boxes .box1,
     .boxes .box2,
