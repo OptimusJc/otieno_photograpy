@@ -348,7 +348,7 @@ ul {
     margin-top: 45rem;
     position: relative; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 100em) {
   .spacer {
     margin-top: 50rem; } }
 
@@ -446,7 +446,7 @@ ul {
     width: 404px;
     height: 147px; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 100em) {
   .menu-logo {
     margin-left: 10rem; } }
 
@@ -650,7 +650,7 @@ ul {
       .navigation nav ul li:hover .dropdown-content a:hover {
         background: rgba(102, 97, 37, 0.5); } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 100em) {
   .navigation {
     margin-right: 10.8125rem; } }
 
@@ -740,7 +740,7 @@ ul {
         width: 639px;
         height: 540px; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 100em) {
   .outer-wrapper {
     width: 600px;
     height: 1330px;
@@ -834,7 +834,7 @@ ul {
     .boxes .box3 div {
       display: grid; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 100em) {
   .boxes {
     width: 1330px;
     margin-right: auto;
@@ -951,7 +951,7 @@ ul {
   .links {
     display: none; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 100em) {
   .about .about-me {
     width: auto;
     margin-top: 20rem;
@@ -1087,7 +1087,7 @@ ul {
     height: 450px;
     margin-top: 2.375rem; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 100em) {
   .contact .about-me,
   .contact form {
     margin-left: 18rem; }
