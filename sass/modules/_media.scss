@@ -117,3 +117,31 @@
     }
 }
 
+@include extra-large {
+    .outer-wrapper {
+        width: 600px;
+        height: 1330px;
+        margin-left: 16rem;
+        transform: rotate(-90deg) translateX(-600px);
+        transform-origin: top left;
+        position: absolute;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        .wrapper {
+            width: 1330px;
+            height: 600px;
+            transform: rotate(90deg) translateY(-600px);
+            transform-origin: top left;
+
+            .media-item,
+            .media-item-food {
+                width: 650px; //original 855px
+                // height: 506px;
+                height: 600px;
+            }
+        }
+    }
+}

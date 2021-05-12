@@ -95,7 +95,7 @@
                 </div>
 
                 <!-- form  -->
-                <form action="#">
+                <form action="https://formspree.io/f/xpzkpqrr" method="POST" id="my-form">
                     <!-- * first name  -->
                     <div class="row form-div">
                         <div class="col-sm-3 col-3">
@@ -144,6 +144,7 @@
                             <input type="submit" value="submit" class="subButton">
                         </div>
                     </div>
+                    <p id="my-form-status"></p>
 
                 </form>
 
@@ -208,6 +209,30 @@
         2021. All rights Reserved
     </footer>
 
+
+
+    <script>
+        var form = document.getElementById("my-form");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                status.innerHTML = "Thanks for your submission!";
+                form.reset()
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPHSjTV8-0TjW_hgIhmArD3RnGnxV4PA0&callback=initMap"
         async defer></script>

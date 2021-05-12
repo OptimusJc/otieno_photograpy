@@ -195,3 +195,21 @@
         }
     }
 }
+
+@include extra-large {
+    .contact {
+        .about-me,
+        form {
+            margin-left: 18rem;
+        }
+
+        .links {
+            margin-left: 18rem;
+            margin-top: 10rem;
+        }
+
+        #maps {
+            margin-left: 5rem;
+        }
+    }
+}

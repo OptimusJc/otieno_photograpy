@@ -27,3 +27,9 @@
         height: 147px;
     }
 }
+
+@include extra-large {
+    .menu-logo {
+        margin-left: 10rem;
+    }
+}

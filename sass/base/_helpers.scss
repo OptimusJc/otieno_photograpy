@@ -26,3 +26,9 @@
         position: relative;
     }
 }
+
+@include extra-large {
+    .spacer {
+        margin-top: 50rem;
+    }
+}

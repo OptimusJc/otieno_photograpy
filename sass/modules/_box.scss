@@ -96,3 +96,17 @@
         }
     }
 }
+
+@include extra-large {
+    .boxes {
+        width: 1330px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .box1,
+        .box2,
+        .box3 {
+            gap: 1.27rem; //random number that just worked
+        }
+    }
+}
