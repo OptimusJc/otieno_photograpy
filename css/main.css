@@ -308,7 +308,7 @@ template {
   font-family: "Century Gothic";
   font-style: normal;
   font-weight: normal;
-  src: url("/images/font/GOTHIC.woff") format("woff"); }
+  src: url("../../images/font/GOTHIC.woff") format("woff"); }
 
 * {
   margin: 0;
