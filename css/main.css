@@ -483,6 +483,14 @@ ul {
     font-size: 2.75rem;
     margin-top: 0.9rem; } }
 
+@media only screen and (min-width: 100em) {
+  .landing img {
+    top: 447px;
+    left: 703px; }
+  .landing a {
+    top: 600px;
+    left: 892px; } }
+
 .header {
   display: flex;
   justify-content: space-between;

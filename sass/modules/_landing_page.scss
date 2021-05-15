@@ -47,3 +47,17 @@
         }
     }
 }
+
+@include extra-large {
+    .landing {
+        img {
+            top: 447px;
+            left: 703px;
+        }
+
+        a {
+            top: 600px;
+            left: 892px;
+        }
+    }
+}
