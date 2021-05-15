@@ -308,7 +308,7 @@ template {
   font-family: "Century Gothic";
   font-style: normal;
   font-weight: normal;
-  src: url("../../images/font/GOTHIC.woff") format("woff"); }
+  src: url("../images/font/GOTHIC.woff") format("woff"); }
 
 * {
   margin: 0;
@@ -481,6 +481,7 @@ ul {
     top: 414px;
     left: 622px;
     font-size: 2.75rem;
+    font-weight: 600;
     margin-top: 0.9rem; } }
 
 @media only screen and (min-width: 100em) {

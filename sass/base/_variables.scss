@@ -4,7 +4,9 @@
     font-family: "Century Gothic";
     font-style: normal;
     font-weight: normal;
-    src: url("../../images/font/GOTHIC.woff") format("woff");
+    //for github
+    src: url("../images/font/GOTHIC.woff") format("woff");
+    // src: url("/images/font/GOTHIC.woff");
 }
 
 $primary-color: #fff348;
