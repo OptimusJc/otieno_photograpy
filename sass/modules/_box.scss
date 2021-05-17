@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
     margin: auto;
-    margin-top: 1.25rem;
+    margin-top: 1.5625rem;
 
     .box1,
     .box2,
@@ -30,9 +30,9 @@
 
 @include small-and-above {
     .boxes {
-        margin-top: 4.375rem;
+        margin-top: 4.375rem; //original 4.375rem
         display: flex;
-        width: 699px;
+        width: 705px;
         overflow: hidden;
 
         .box1,
@@ -67,7 +67,9 @@
 @include medium-and-above {
     .boxes {
         display: flex;
-        width: 1330px;
+        width: 1187px;
+        margin-top: 4rem;
+        margin-left: 5.625rem;
         overflow: hidden;
 
         .box1,
@@ -77,7 +79,7 @@
             grid-template-rows: minmax(0.75rem, auto);
             gap: 1.25rem; //custom value that balanced these boxes
             // separator margin
-            margin-right: 1.25rem;
+            margin-right: 0.9375rem;
         }
 
         .box1 div,
@@ -91,6 +93,20 @@
         .box2 div,
         .box3 div {
             display: grid;
+        }
+    }
+}
+
+@include extra-large {
+    .boxes {
+        width: 1330px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .box1,
+        .box2,
+        .box3 {
+            gap: 1.27rem; //random number that just worked
         }
     }
 }

@@ -116,6 +116,8 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        width: 90%;
+        margin-right: 1rem;
 
         // nav logo
         .nav-logo {
@@ -131,7 +133,7 @@
 
             a {
                 font-size: 0.8rem;
-                font-weight: 500;
+                font-weight: 600;
                 transition: none;
             }
 
@@ -162,7 +164,7 @@
                     a {
                         display: block;
                         font-weight: 500;
-                        font-size: 0.8rem;
+                        font-size: 0.7rem;
                         padding: 1rem 0.7rem;
                         text-decoration: none;
                     }
@@ -197,18 +199,20 @@
 
 @include medium-and-above {
     .navigation {
-        margin-right: 7.8125rem;
+        background: none;
+        margin-right: 3.75rem;
+        width: 60%;
 
         nav ul li {
             a {
-                font-size: 1rem;
+                font-size: 0.8rem;
             }
 
             .dropdown-content {
                 display: none;
                 position: absolute;
                 top: 4rem;
-                left: 0.1rem;
+                // left: 0.1rem;
                 min-width: 200px;
                 height: auto;
                 z-index: 1;
@@ -233,5 +237,11 @@
                 }
             }
         }
+    }
+}
+
+@include extra-large {
+    .navigation {
+        margin-right: 10.8125rem;
     }
 }

@@ -7,5 +7,28 @@
 }
 
 .no-display {
-    border: 1px solid red;
+    display: none;
+}
+
+.spacer {
+    margin-top: 12rem;
+}
+
+@include small-and-above {
+    .spacer {
+        margin-top: 0;
+    }
+}
+
+@include medium-and-above {
+    .spacer {
+        margin-top: 45rem;
+        position: relative;
+    }
+}
+
+@include extra-large {
+    .spacer {
+        margin-top: 50rem;
+    }
 }
