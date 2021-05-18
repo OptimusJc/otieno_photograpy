@@ -564,15 +564,15 @@ ul {
   .boxes .box2,
   .boxes .box3 {
     display: grid;
-    grid-template-columns: repeat(10, 1rem);
-    grid-template-rows: minmax(1rem, auto);
+    grid-template-columns: repeat(10, 0.9rem);
+    grid-template-rows: minmax(0.9rem, auto);
     grid-auto-flow: row;
-    gap: 1.185rem; }
+    gap: 1.285rem; }
   .boxes .box1 div,
   .boxes .box2 div,
   .boxes .box3 div {
-    width: 1rem;
-    height: 1rem;
+    width: 0.9rem;
+    height: 0.9rem;
     background: #fff; }
   .boxes .box2 div,
   .boxes .box3 div {
@@ -587,15 +587,15 @@ ul {
     .boxes .box1,
     .boxes .box2,
     .boxes .box3 {
-      grid-template-columns: repeat(11, 1.25rem);
-      grid-template-rows: minmax(1.25rem, auto);
-      gap: 3rem;
+      grid-template-columns: repeat(11, 1rem);
+      grid-template-rows: minmax(1rem, auto);
+      gap: 2.9rem;
       margin-right: -1.2rem; }
     .boxes .box1 div,
     .boxes .box2 div,
     .boxes .box3 div {
-      width: 1.25rem;
-      height: 1.25rem;
+      width: 1rem;
+      height: 1rem;
       background: #fff; }
     .boxes .box1 div,
     .boxes .box2 div {
