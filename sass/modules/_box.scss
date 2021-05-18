@@ -10,7 +10,7 @@
     .box2,
     .box3 {
         display: grid;
-        grid-template-columns: repeat(10,0.9rem);
+        grid-template-columns: repeat(10, 0.9rem);
         grid-template-rows: minmax(0.9rem, auto);
         grid-auto-flow: row;
         gap: 1.285rem; //original 1.375rem
@@ -113,9 +113,9 @@
         .box1,
         .box2,
         .box3 {
-            grid-template-columns: repeat(10, 1.438rem);
-            grid-template-rows: minmax(1.5rem, auto);
-            gap: 3.375rem; //custom value that balanced these boxes
+            grid-template-columns: repeat(10, 1rem);
+            grid-template-rows: minmax(1rem, auto);
+            gap: 3.6rem; //custom value that balanced these boxes
             // separator margin
             margin-right: 3rem;
         }
@@ -123,8 +123,8 @@
         .box1 div,
         .box2 div,
         .box3 div {
-            width: 1.438rem;
-            height: 1.5rem;
+            width: 1rem;
+            height: 1rem;
         }
 
         .box1 div,
