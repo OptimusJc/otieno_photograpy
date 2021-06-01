@@ -39,7 +39,7 @@
 }
 
 .links ul {
-    display: flex;
+    @include flex();
     justify-content: center;
     margin-top: 4.938rem; //modified (original is 2.938rem
 
@@ -82,7 +82,7 @@
     }
 
     .links ul {
-        display: flex;
+        @include flex();
         justify-content: center;
         margin-top: 3.125rem;
         margin-bottom: 2rem;

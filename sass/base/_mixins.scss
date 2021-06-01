@@ -2,3 +2,10 @@
     padding-top: $value;
     padding-bottom: $value;
 }
+
+@mixin flex() {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+}

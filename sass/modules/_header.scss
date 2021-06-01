@@ -1,6 +1,6 @@
 // header styles
 .header {
-    display: flex;
+    @include flex();
     justify-content: space-between;
     align-items: center;
     width: 100%;

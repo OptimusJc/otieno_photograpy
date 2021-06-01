@@ -4,7 +4,11 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 1.69rem;
+    -webkit-transform: rotate(-90deg) translateX(-502px);
+    -ms-transform: rotate(-90deg) translateX(-502px);
     transform: rotate(-90deg) translateX(-502px);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
     transform-origin: top left;
     overflow-y: scroll;
     overflow-x: scroll;
@@ -20,7 +24,11 @@
         grid-gap: 0.4rem;
         // overflow-x: scroll;
         // width: 3976px; //total width of the columns
+        -webkit-transform: rotate(90deg) translateY(-502px);
+        -ms-transform: rotate(90deg) translateY(-502px);
         transform: rotate(90deg) translateY(-502px);
+        -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
         transform-origin: top left;
 
         &::-webkit-scrollbar {
@@ -66,7 +74,11 @@
         height: 695px;
         margin-top: 5.125rem;
         margin-left: 1.4rem; //margin-left that just worked. come back to this
+        -webkit-transform: rotate(-90deg) translateX(-603px);
+        -ms-transform: rotate(-90deg) translateX(-603px);
         transform: rotate(-90deg) translateX(-603px);
+        -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
         transform-origin: top left;
         overflow-y: scroll;
         overflow-x: scroll;
@@ -76,7 +88,11 @@
         .wrapper {
             width: 705px;
             height: 650px;
+            -webkit-transform: rotate(90deg) translateY(-603px);
+            -ms-transform: rotate(90deg) translateY(-603px);
             transform: rotate(90deg) translateY(-603px);
+            -webkit-transform-origin: top left;
+            -ms-transform-origin: top left;
             transform-origin: top left;
 
             .media-item,
@@ -94,7 +110,11 @@
         height: 1187px;
         // margin-left: 9.225rem;
         margin-left: 4.2rem;
+        -webkit-transform: rotate(-90deg) translateX(-540px);
+        -ms-transform: rotate(-90deg) translateX(-540px);
         transform: rotate(-90deg) translateX(-540px);
+        -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
         transform-origin: top left;
         position: absolute;
         overflow-y: scroll;
@@ -102,11 +122,14 @@
         scrollbar-width: none;
         -ms-overflow-style: none;
 
-
         .wrapper {
             width: 1187px;
             height: 506px;
+            -webkit-transform: rotate(90deg) translateY(-540px);
+            -ms-transform: rotate(90deg) translateY(-540px);
             transform: rotate(90deg) translateY(-540px);
+            -webkit-transform-origin: top left;
+            -ms-transform-origin: top left;
             transform-origin: top left;
 
             .media-item,
@@ -124,7 +147,11 @@
         width: 600px;
         height: 1330px;
         margin-left: 17rem;
+        -webkit-transform: rotate(-90deg) translateX(-600px);
+        -ms-transform: rotate(-90deg) translateX(-600px);
         transform: rotate(-90deg) translateX(-600px);
+        -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
         transform-origin: top left;
         position: absolute;
         overflow-y: scroll;
@@ -135,7 +162,11 @@
         .wrapper {
             width: 1330px;
             height: 600px;
+            -webkit-transform: rotate(90deg) translateY(-600px);
+            -ms-transform: rotate(90deg) translateY(-600px);
             transform: rotate(90deg) translateY(-600px);
+            -webkit-transform-origin: top left;
+            -ms-transform-origin: top left;
             transform-origin: top left;
 
             .media-item,

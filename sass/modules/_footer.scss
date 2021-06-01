@@ -1,6 +1,6 @@
 footer {
     margin-top: 1.65rem; //random number that worked(come back and revise)
-    display: flex;
+    @include flex();
     align-items: center;
     justify-content: center;
     padding: 1.25rem;
