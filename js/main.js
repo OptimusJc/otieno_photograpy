@@ -7,7 +7,7 @@ function initMap() {
     };
 
     const map = new google.maps.Map(document.getElementById('maps'), {
-        zoom: 4,
+        zoom: 15,
         center: jabavu_lane,
     });
 

@@ -18,7 +18,7 @@
     // potraits wrapper
     .wrapper {
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(17, 1fr);
         grid-template-rows: minmax(1fr, auto);
         grid-auto-flow: row;
         grid-gap: 0.4rem;
