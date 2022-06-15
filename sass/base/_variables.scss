@@ -5,11 +5,11 @@
     font-style: normal;
     font-weight: normal;
     //for github
-    src: url("../images/font/GOTHIC.woff") format("woff");
-    // src: url("/images/font/GOTHIC.woff");
+    // src: url("/images/font/gothic.woff") format("woff");
+    src: url("/images/font/gothic.woff");
 }
 
 $primary-color: #fff348;
 $secondary-color: #000000;
 $home-font: "Dancing Script";
-$default-font: "GOTHIC", sans-serif;
+$default-font: "century gothic", sans-serif;

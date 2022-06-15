@@ -1,63 +1,39 @@
 .landing {
-    position: relative;
+    
+    .col {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-    img {
-        position: absolute;
-        top: 285px;
-        left: 93px;
-    }
 
-    a {
-        font-family: $home-font;
-        font-size: 2.5rem;
-        text-transform: capitalize;
-        line-height: 3rem;
-        position: absolute;
-        top: 398px;
-        left: 167px;
-    }
-}
-
-@include small-and-above {
-    .landing {
         img {
-            top: 429px;
-            left: 270px;
+            width: 230px;
+            height: auto;
         }
 
         a {
-            top: 542px;
-            left: 344px;
+            font-family: $home-font;
+            font-size: 2.5rem;
+            text-transform: capitalize;
+            line-height: 3rem;
+            margin-top: 1rem;;
+       
+        }
+
+        @include small-and-above {
+            img {
+                width: 300px;
+            }
+
+            a {
+                line-height: 2.5rem;
+            }
         }
     }
+
 }
 
-@include medium-and-above {
-    .landing {
-        img {
-            top: 237px;
-            left: 481px;
-        }
 
-        a {
-            top: 422px;
-            left: 622px;
-            font-size: 2.75rem;
-            margin-top: 2.375rem;
-        }
-    }
-}
 
-@include extra-large {
-    .landing {
-        img {
-            top: 447px;
-            left: 703px;
-        }
-
-        a {
-            top: 600px;
-            left: 892px;
-        }
-    }
-}

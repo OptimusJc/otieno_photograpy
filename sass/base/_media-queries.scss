@@ -1,10 +1,10 @@
 // media queries variables
 $mq-1: 48em !default; //ipad view
-$mq-2: 62em !default; //special devices, laptops
-$mq-3: 100em !default; //desktop view
+$mq-2: 64em !default; //small laptop
+$mq-3: 75em !default; //desktop
 
 @mixin extra-small-devices {
-    @media only screen and (max-width: $mq-1 - 0.0625) {
+    @media only screen and (max-width: ($mq-1 - 0.0625)) {
         @content;
     }
 }
