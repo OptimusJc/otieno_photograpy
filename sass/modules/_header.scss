@@ -1,21 +1,89 @@
 // header styles
 .header {
-  background-color: hsl(0 0% 0%) !important;
+    background-color: hsl(0, 0%, 0%) !important;
 
-  .container-fluid {
-    .collapse .navbar-nav .nav-link {
-      color: $primary-color !important;
+    .container-fluid {
+        .collapse .navbar-nav .nav-link {
+            color: $primary-color !important;
+        }
+
+        .navbar-toggler {
+            height: 40px;
+            width: 40px;
+            padding: 0;
+        }
+
+        .collapse.navbar-collapse.show {
+            height: 80vh;
+
+            .navbar-nav {
+                align-items: center;
+
+                .nav-item {
+                    padding-block: 1rem;
+                }
+
+                .nav-item.dropdown {
+                    .dropdown-menu {
+                        position: absolute;
+                        background-image: linear-gradient(
+                            to right,
+                            #fff348,
+                            #ffffa0
+                        );
+                        text-align: center;
+
+                        .dropdown-item {
+                            padding-block: 0.5rem;
+
+                            &:active {
+                                background: #fff348;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include small-and-above {
+                height: 100vh;
+
+                .navbar-nav {
+                    padding-block: 3rem;
+                }
+            }
+        }
     }
-  }
-}
 
-@include small-and-above {
-  .header {
-    height: 4.375rem;
+    @include medium-and-above {
+        .navbar-collapse {
+            flex-grow: unset;
+        }
 
-    // hambuger icon
-    .nav-toggle-label {
-      display: none;
+        .container-fluid {
+            .navbar-nav .nav-link {
+                font-size: 0.9rem;
+                margin-inline: 0.8rem;
+            }
+
+            .collapse.navbar-collapse {
+                .navbar-nav {
+                    .nav-item.dropdown {
+                        .dropdown-menu {
+                            background-image: linear-gradient(
+                                to right,
+                                #fff348,
+                                #ffffa0
+                            );
+
+                            .dropdown-item {
+                                padding-block: 0.7rem;
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 }

@@ -1,262 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Landing Page</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body class="background-secondary">
-    <div class="container ">
-        <div class="row">
-
-            <header class="header">
-                <a href="index.html">
-                    <img src="images/logos/otieno_logo_yellow.png" class="menu-logo" alt="logo image">
-
-                </a>
-
-                <!-- nav toggle  -->
-                <input type="checkbox" class="nav-toggle" id="nav-toggle">
-                <label for="nav-toggle" name="nav-toggle-label" class="nav-toggle-label">
-                    <!-- <span></span> -->
-                    <img src="images/svg/bars-solid.svg" alt="">
-                </label>
-
-                <div class="navigation">
-                    <img src="images/logos/otieno_logo_yellow.png" class="nav-logo" alt="">
-                    <nav>
-                        <ul>
-                            <li>
-                                <div class="dropdown">
-                                    <a href="#">
-                                        Portraits & Headshots
-                                        <img src="images/svg/caret-down-solid.svg" alt="">
+    <body class="background-secondary">
+        <div class="container">
+            <div class="row">
+                <!-- navigation  -->
+                <nav class="navbar navbar-expand-lg header">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img
+                                src="images/logos/otieno_logo_yellow.png"
+                                alt="otieno photography logo"
+                                class="logo"
+                            />
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <img
+                                className="navbar-toggler-icon"
+                                src="images/svg/bars-solid.svg"
+                            />
+                        </button>
+                        <div
+                            class="collapse navbar-collapse"
+                            id="navbarSupportedContent"
+                        >
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="navbarDropdown"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        Potraits
                                     </a>
+                                    <ul
+                                        class="dropdown-menu"
+                                        aria-labelledby="navbarDropdown"
+                                    >
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="./potraits.html"
+                                                >Female</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item"
+                                                href="./potriats-men.html"
+                                                >Male</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./food.html"
+                                        >Food</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        href="./architecture.html"
+                                        >Architecture</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html"
+                                        >About</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
 
-                                    <div class="dropdown-content">
-                                        <a href="potraits.html">Women</a>
-                                        <a href="potriats-men.html">Men</a>
-                                    </div>
-                                </div>
+        <div class="container contact">
+            <div class="row">
+                <div class="col-sm-12 col-6">
+                    <!-- information  -->
+                    <div class="about-me">
+                        <p>
+                            Please Use The Submission Form Below Otieno
+                            Photography ( By appointment only)
+                        </p>
+                    </div>
 
-                            </li>
-                            <li>
-                                <a href="architecture.html">architectural photography</a>
-                            </li>
-                            <li>
-                                <a href="food.html">food photography</a>
-                            </li>
-                            <li>
-                                <a href="about.html">about</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">contact</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <!-- form  -->
+                    <form
+                        action="https://formspree.io/f/xpzkpqrr"
+                        method="POST"
+                        id="my-form"
+                    >
+                        <!-- * first name  -->
+                        <div class="row form-div">
+                            <div class="col-sm-3 col-3">
+                                <label for="fname"> First Name</label>
+                            </div>
+                            <div class="col-sm-9 col-9">
+                                <input
+                                    type="text"
+                                    id="fname"
+                                    name="firstname"
+                                    placeholder="first name"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- * last name  -->
+                        <div class="row form-div">
+                            <div class="col-sm-3 col-3">
+                                <label for="lname"> Last Name</label>
+                            </div>
+                            <div class="col-sm-9 col-9">
+                                <input
+                                    type="text"
+                                    id="lname"
+                                    name="lastname"
+                                    placeholder="last name"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- * email  -->
+                        <div class="row form-div">
+                            <div class="col-sm-3 col-3">
+                                <label for="mail"> Email</label>
+                            </div>
+                            <div class="col-sm-9 col-9">
+                                <input
+                                    type="email"
+                                    id="mail"
+                                    name="email"
+                                    placeholder="email"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- * message  -->
+                        <div class="row form-div">
+                            <div class="col-sm-3 col-3">
+                                <label for="message"> Message</label>
+                            </div>
+                            <div class="col-sm-9 col-9">
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    placeholder="enter message here"
+                                ></textarea>
+                            </div>
+                        </div>
+
+                        <!-- * submit button  -->
+                        <div class="row form-div">
+                            <div class="col-sm-12 col-4">
+                                <input
+                                    type="submit"
+                                    value="submit"
+                                    class="subButton"
+                                />
+                            </div>
+                        </div>
+                        <p id="my-form-status"></p>
+                    </form>
+                </div>
+
+                <div class="col-sm-6 col-4 pull-right">
+                    <!-- maps  -->
+                    <div id="maps"></div>
+                    <!-- <iframe id="maps" loading="lazy" frameborder="0" style="border: 0" allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:EhlKYWJhdnUgTG4sIE5haXJvYmksIEtlbnlhIi4qLAoUChIJ4xfLM7wQLxgRN8R_1M73oa8SFAoSCadJTdhyES8YEUySl7JUAs_3&key=AIzaSyCg9yjjRVpvsqAoRlyrXyd9fZn-tkHrF9U">
+                </iframe> -->
+                </div>
+
+                <div class="col-sm-6 col-12 pull-left">
+                    <!-- footer links  -->
                     <div class="links">
                         <ul>
                             <li>
                                 <a href="https://www.facebook.com/rivonia6">
-                                    <img src="images/svg/facebook-brands.svg" alt="facebook icon">
+                                    <img
+                                        src="images/svg/facebook-brands.svg"
+                                        alt="facebook icon"
+                                    />
+                                    <p>Otieno Photography</p>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/allan_okumu/">
-                                    <img src="images/svg/instagram-brands.svg" alt="instagram icon">
+                                <a
+                                    href="https://www.instagram.com/allan_okumu/"
+                                >
+                                    <img
+                                        src="images/svg/instagram-brands.svg"
+                                        alt="instagram icon"
+                                    />
+                                    <p>allan_okumu</p>
                                 </a>
                             </li>
                             <!-- <li>
-                                <a href="#">
-                                    <img src="images/svg/twitter-brands.svg" alt="twitter icon">
-                                </a>
-                            </li> -->
-                        </ul>
-                    </div>
-
-                </div>
-            </header>
-        </div>
-    </div>
-
-    <div class="container contact">
-        <div class="row">
-            <div class="col-sm-12 col-6">
-                <!-- information  -->
-                <div class="about-me">
-                    <p>
-                        Please Use The Submission Form Below
-                        Otieno Photography ( By appointment only)
-                    </p>
-                </div>
-
-                <!-- form  -->
-                <form action="https://formspree.io/f/xpzkpqrr" method="POST" id="my-form">
-                    <!-- * first name  -->
-                    <div class="row form-div">
-                        <div class="col-sm-3 col-3">
-                            <label for="fname"> First Name</label>
-                        </div>
-                        <div class="col-sm-9 col-9">
-                            <input type="text" id="fname" name="firstname" placeholder="first name">
-                        </div>
-
-                    </div>
-
-                    <!-- * last name  -->
-                    <div class="row form-div">
-                        <div class="col-sm-3 col-3">
-                            <label for="lname"> Last Name</label>
-                        </div>
-                        <div class="col-sm-9 col-9">
-                            <input type="text" id="lname" name="lastname" placeholder="last name">
-                        </div>
-                    </div>
-
-                    <!-- * email  -->
-                    <div class="row form-div">
-                        <div class="col-sm-3 col-3">
-                            <label for="mail"> Email</label>
-                        </div>
-                        <div class="col-sm-9 col-9">
-                            <input type="email" id="mail" name="email" placeholder="email">
-                        </div>
-                    </div>
-
-                    <!-- * message  -->
-                    <div class="row form-div">
-                        <div class="col-sm-3 col-3">
-                            <label for="message"> Message</label>
-                        </div>
-                        <div class="col-sm-9 col-9">
-                            <textarea name="message" id="message" placeholder="enter message here"></textarea>
-                        </div>
-                    </div>
-
-                    <!-- * submit button  -->
-                    <div class="row form-div">
-                        <div class="col-sm-12 col-4">
-
-                            <input type="submit" value="submit" class="subButton">
-                        </div>
-                    </div>
-                    <p id="my-form-status"></p>
-
-                </form>
-
-            </div>
-
-            <div class="col-sm-6 col-4 pull-right">
-                <!-- maps  -->
-                <div id="maps"></div>
-                <!-- <iframe id="maps" loading="lazy" frameborder="0" style="border: 0" allowfullscreen
-                    src="https://www.google.com/maps/embed/v1/place?q=place_id:EhlKYWJhdnUgTG4sIE5haXJvYmksIEtlbnlhIi4qLAoUChIJ4xfLM7wQLxgRN8R_1M73oa8SFAoSCadJTdhyES8YEUySl7JUAs_3&key=AIzaSyCg9yjjRVpvsqAoRlyrXyd9fZn-tkHrF9U">
-                </iframe> -->
-            </div>
-
-            <div class="col-sm-6 col-12 pull-left">
-                <!-- footer links  -->
-                <div class="links">
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/rivonia6">
-                                <img src="images/svg/facebook-brands.svg" alt="facebook icon">
-                                <p>Otieno Photography</p>
-                            </a>
-
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/allan_okumu/">
-                                <img src="images/svg/instagram-brands.svg" alt="instagram icon">
-                                <p>allan_okumu</p>
-                            </a>
-                        </li>
-                        <!-- <li>
                             <a href="#">
                                 <img src="images/svg/twitter-brands.svg" alt="twitter icon">
                                 <p>twitter link</p>
                             </a>
                         </li> -->
-                        <li>
-                            <a href="#">
-                                <img src="images/svg/envelope-solid.svg" alt="envelope icon">
-                                <p>allan@otienophotography.com</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/svg/phone-alt-solid.svg" alt="telephone icon">
-                                <p>0727956834/ 0738172766</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/svg/map-marker-alt-solid.svg" alt="location icon">
-                                <p>Jabavu Lane, Westlands, Nairobi</p>
-                            </a>
-                        </li>
-                    </ul>
+                            <li>
+                                <a href="#">
+                                    <img
+                                        src="images/svg/envelope-solid.svg"
+                                        alt="envelope icon"
+                                    />
+                                    <p>allan@otienophotography.com</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img
+                                        src="images/svg/phone-alt-solid.svg"
+                                        alt="telephone icon"
+                                    />
+                                    <p>0727956834/ 0738172766</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img
+                                        src="images/svg/map-marker-alt-solid.svg"
+                                        alt="location icon"
+                                    />
+                                    <p>Jabavu Lane, Westlands, Nairobi</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
         </div>
 
-    </div>
+        <footer>
+            <img src="images/svg/copyright-solid.svg" alt="copyright icon" />
+            2021. All rights Reserved
+        </footer>
 
-    <footer>
-        <img src="images/svg/copyright-solid.svg" alt="copyright icon">
-        2021. All rights Reserved
-    </footer>
+        <script>
+            var form = document.getElementById("my-form");
 
+            async function handleSubmit(event) {
+                event.preventDefault();
+                var status = document.getElementById("my-form-status");
+                var data = new FormData(event.target);
+                fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        Accept: "application/json",
+                    },
+                })
+                    .then((response) => {
+                        status.innerHTML = "Thanks for your submission!";
 
+                        setTimeout(() => {
+                            status.innerHTML = "";
+                        }, 3000);
+                        form.reset();
+                    })
+                    .catch((error) => {
+                        status.innerHTML =
+                            "Oops! There was a problem submitting your form";
 
-    <script>
-        var form = document.getElementById("my-form");
+                        setTimeout(() => {
+                            status.innerHTML = "";
+                        }, 3000);
+                    });
+            }
+            form.addEventListener("submit", handleSubmit);
+        </script>
 
-        async function handleSubmit(event) {
-            event.preventDefault();
-            var status = document.getElementById("my-form-status");
-            var data = new FormData(event.target);
-            fetch(event.target.action, {
-                method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json',
-                }
-            }).then(response => {
-
-                status.innerHTML = "Thanks for your submission!";
-
-                setTimeout(() => {
-                    status.innerHTML = '';
-                }, 3000);
-                form.reset();
-            }).catch(error => {
-
-                status.innerHTML = "Oops! There was a problem submitting your form";
-
-                setTimeout(() => {
-                    status.innerHTML = '';
-                }, 3000);
-            });
-        }
-        form.addEventListener("submit", handleSubmit);
-    </script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPHSjTV8-0TjW_hgIhmArD3RnGnxV4PA0&callback=initMap"
-        async defer></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js"></script>
-
-
-</body>
-
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPHSjTV8-0TjW_hgIhmArD3RnGnxV4PA0&callback=initMap"
+            async
+            defer
+        ></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

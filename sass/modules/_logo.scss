@@ -1,29 +1,33 @@
 .logo {
     width: 150px;
-}
 
-@include small-and-above {
-    .menu-logo {
-        width: 116px;
-        height: 42.55px;
+    @include small-and-above {
+        width: 120px;
+        height: auto;
     }
 
-    .logo {
-        width: 228px;
-        height: 83px;
+    @include medium-and-above {
+        width: 160px;
     }
 }
+
+// @include small-and-above {
+//     .menu-logo {
+//         width: 116px;
+//         height: 42.55px;
+//     }
+
+//     .logo {
+//         width: 228px;
+//         height: 83px;
+//     }
+// }
 
 @include medium-and-above {
     .menu-logo {
         width: 185px;
         height: 75px;
         margin-left: 5rem;
-    }
-
-    .logo {
-        width: 404px;
-        height: 147px;
     }
 }
 
