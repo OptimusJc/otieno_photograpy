@@ -1,14 +1,15 @@
 .logo {
-    width: 150px;
+  width: 150px;
 
-    @include small-and-above {
-        width: 120px;
-        height: auto;
-    }
+  @include small-and-above {
+    width: 120px;
+    height: auto;
+    margin-left: -1rem;
+  }
 
-    @include medium-and-above {
-        width: 160px;
-    }
+  @include medium-and-above {
+    width: 160px;
+  }
 }
 
 // @include small-and-above {
@@ -24,15 +25,15 @@
 // }
 
 @include medium-and-above {
-    .menu-logo {
-        width: 185px;
-        height: 75px;
-        margin-left: 5rem;
-    }
+  .menu-logo {
+    width: 185px;
+    height: 75px;
+    margin-left: 5rem;
+  }
 }
 
 @include extra-large {
-    .menu-logo {
-        margin-left: 10rem;
-    }
+  .menu-logo {
+    margin-left: 10rem;
+  }
 }

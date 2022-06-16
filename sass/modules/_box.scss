@@ -1,139 +1,77 @@
 .boxes {
-    width: 100%;
+  width: 100%;
+  margin-inline: auto;
+  margin-top: 1.5625rem;
+  overflow-x: hidden;
+
+  .box1,
+  .box2,
+  .box3 {
+    display: grid;
+    grid-auto-columns: minmax(0.9rem, 1fr);
+    grid-auto-rows: minmax(0.9rem, 1fr);
+    grid-auto-flow: column dense;
+    gap: 1.3rem;
+  }
+
+  .box1 div,
+  .box2 div,
+  .box3 div {
+    width: 0.9rem;
     height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 1.5625rem;
-    overflow-x: hidden;
+    background: #fff;
+
+    @include small-and-above {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  .box2 div,
+  .box3 div {
+    display: none;
+  }
+
+  @include small-and-above {
+    margin-top: 4.375rem; //original 4.375rem
+    display: flex;
+
+    .box2 {
+      margin-inline: 1.9rem;
+    }
 
     .box1,
     .box2,
     .box3 {
-        display: grid;
-        grid-template-columns: repeat(10, 0.9rem);
-        grid-template-rows: minmax(0.9rem, auto);
-        grid-auto-flow: row;
-        gap: 1.285rem; //original 1.375rem
+      gap: 2.18rem;
+    }
+  }
+
+  @include medium-and-above {
+    width: 100%;
+    margin-top: 4rem;
+
+    .box1,
+    .box2,
+    .box3 {
+      gap: 2.4rem;
     }
 
-    .box1 div,
-    .box2 div,
-    .box3 div {
-        width: 0.9rem;
-        height: 0.9rem;
-        background: #fff;
+    .box2 {
+      margin-inline: 2.3rem;
     }
 
-    .box2 div,
     .box3 div {
-        display: none;
+      display: block;
     }
+  }
 }
 
 @include small-and-above {
-    .boxes {
-        margin-top: 4.375rem; //original 4.375rem
-        display: flex;
-        width: 705px;
-        overflow: hidden;
-
-        .box1,
-        .box2,
-        .box3 {
-            grid-template-columns: repeat(11, 1rem);
-            grid-template-rows: minmax(1rem, auto);
-            gap: 2.9rem; //custom value that balanced these boxes
-            // separator margin
-            margin-right: -1.2rem;
-        }
-
-        .box1 div,
-        .box2 div,
-        .box3 div {
-            width: 1rem;
-            height: 1rem;
-            background: #fff;
-        }
-
-        .box1 div,
-        .box2 div {
-            display: grid;
-        }
-
-        .box3 div {
-            display: none;
-        }
+  .boxes {
+    .box1 div,
+    .box2 div {
+      display: grid;
     }
-}
-
-@include medium-and-above {
-    .boxes {
-        display: flex;
-        width: 1187px;
-        margin-top: 4rem;
-        margin-left: auto;
-        margin-right: auto;
-        overflow: hidden;
-
-        .box1,
-        .box2,
-        .box3 {
-            grid-template-columns: repeat(10, 1rem);
-            grid-template-rows: minmax(1rem, auto);
-            gap: 3.5625rem; //custom value that balanced these boxes
-            // separator margin
-            margin-right: 3.9rem;
-        }
-
-        .box1 div,
-        .box2 div,
-        .box3 div {
-            width: 1rem;
-            height: 1rem;
-        }
-
-        .box1 div,
-        .box2 div {
-            display: grid;
-        }
-
-        .box3 div {
-            display: none;
-        }
-    }
-}
-
-@include extra-large {
-    .boxes {
-        width: 1330px;
-        margin-top: 4rem;
-        margin-left: auto;
-        margin-right: auto;
-
-        .box1,
-        .box2,
-        .box3 {
-            grid-template-columns: repeat(10, 1rem);
-            grid-template-rows: minmax(1rem, auto);
-            gap: 3.6rem; //custom value that balanced these boxes
-            // separator margin
-            margin-right: 3rem;
-        }
-
-        .box1 div,
-        .box2 div,
-        .box3 div {
-            width: 1rem;
-            height: 1rem;
-        }
-
-        .box1 div,
-        .box2 div {
-            display: grid;
-        }
-
-        .box3 div {
-            display: none;
-        }
-    }
+  }
 }
